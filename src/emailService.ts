@@ -1,10 +1,10 @@
+
 import { google } from 'googleapis';
 import { oauth2Client } from './authService';
 import { categorizeEmail, generateResponse } from './aiService';
 
 const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
 
-// Function to get the latest unread email
 export const getLatestEmail = async () => {
   const response = await gmail.users.messages.list({
     userId: 'me',
@@ -26,7 +26,6 @@ export const getLatestEmail = async () => {
   return message.data;
 };
 
-// Function to send a reply email
 export async function sendEmail(to: string, subject: string, body: string) {
   const encodedMessage = Buffer.from(
     `To: ${to}\r\n` +
@@ -42,7 +41,6 @@ export async function sendEmail(to: string, subject: string, body: string) {
   });
 }
 
-// Function to apply a label to the email (e.g., categorize the email)
 export async function applyLabelToEmail(emailId: string, labelName: string) {
   try {
     const res = await gmail.users.labels.list({ userId: 'me' });
@@ -75,7 +73,6 @@ export async function applyLabelToEmail(emailId: string, labelName: string) {
   }
 }
 
-// Function to process the latest unread email
 export async function processEmail() {
   try {
     const email = await getLatestEmail();
@@ -95,17 +92,3 @@ export async function processEmail() {
     return 'Error processing email';
   }
 }
-
-// AUTOMATION: Polling mechanism to check for new emails every minute (60000 ms)
-const POLLING_INTERVAL = 60000; // 1 minute in milliseconds
-
-setInterval(async () => {
-  console.log('Checking for new emails...');
-  
-  try {
-    const result = await processEmail();
-    console.log(result);
-  } catch (error) {
-    console.error('Error in email processing loop:', error);
-  }
-}, POLLING_INTERVAL);
