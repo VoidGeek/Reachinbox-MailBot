@@ -22,7 +22,7 @@ export function startAutomatedProcessing() {
   // Set up a cron job to run every 5 minutes
   const job = new CronJob('*/5 * * * *', processAllEmails);
 
-  job.start(); //start karo
+  job.start(); 
 
   console.log('Automated email processing scheduled. Will run every 5 minutes.');
 }
