@@ -103,7 +103,7 @@ const automateLogin = async () => {
     const page = await browser.newPage();
     await page.goto('http://localhost:3000/auth/gmail');
     await page.waitForSelector('input[type="email"]');
-    await page.type('input[type="email"]', 'vijayendranayak19@gmail.com');
+    await page.type('input[type="email"]', 'pradyumna.p.6969@gmail.com');
     await page.click('#identifierNext');
     await page.waitForNavigation();
     console.log('Login successful');
