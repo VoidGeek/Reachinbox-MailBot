@@ -6,7 +6,7 @@ import { processEmail } from './emailService'; // Use the correct function
 const redis = new Redis({
   host: 'localhost',
   port: 6379,
-  password: 'manvswild75', // Add your Redis password here
+  password: 'MyStrongPassword123', // Add your Redis password here
   maxRetriesPerRequest: null,
 });
 
