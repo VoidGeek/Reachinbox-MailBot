@@ -1,6 +1,6 @@
 import { ConfidentialClientApplication, Configuration, AuthorizationUrlRequest, AuthorizationCodeRequest } from "@azure/msal-node";
 import { Client } from "@microsoft/microsoft-graph-client";
-import { config } from './config';
+import { config } from '../config/config';
 
 if (!config.outlook.clientId || !config.outlook.clientSecret || !config.outlook.tenantId || !config.outlook.redirectUri) {
   throw new Error('Outlook configuration is incomplete. Please check your .env file.');

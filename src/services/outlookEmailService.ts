@@ -1,4 +1,4 @@
-import { getOutlookClient } from './outlookAuthService';
+import { getOutlookClient } from '../auth/outlookAuth';
 import { categorizeEmail, generateResponse } from './aiService';
 import { GraphError } from '@microsoft/microsoft-graph-client';
 

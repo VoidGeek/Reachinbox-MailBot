@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import { config } from './config';
+import { config } from '../config/config';
 
 console.log('Client ID:', config.gmail.clientId);
 console.log('Client Secret:', config.gmail.clientSecret ? '[REDACTED]' : 'Missing');

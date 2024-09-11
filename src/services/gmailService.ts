@@ -1,6 +1,6 @@
 
 import { google } from 'googleapis';
-import { oauth2Client } from './authService';
+import { oauth2Client } from '../auth/gmailAuth';
 import { categorizeEmail, generateResponse } from './aiService';
 
 const gmail = google.gmail({ version: 'v1', auth: oauth2Client });

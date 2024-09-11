@@ -1,6 +1,6 @@
 import { Queue, Worker, Job } from 'bullmq';
 import Redis from 'ioredis';
-import { processEmail } from './emailService'; // Use the correct function
+import { processEmail } from '../services/gmailService'; // Use the correct function
 
 // Configure Redis client
 const redis = new Redis({
