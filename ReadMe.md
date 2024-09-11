@@ -22,18 +22,24 @@ A Node.js application for automating email management in both Gmail and Outlook,
 
 ## Folder Structure
 ```bash
-pradyumna-s-inbox/
-│
+pradyumna/
 ├── src/
 │   ├── app.ts
-│   ├── config.ts
-│   ├── authService.ts
-│   ├── emailService.ts
-│   ├── outlookAuthService.ts
-│   ├── outlookEmailService.ts
-│   └── aiService.ts
-│
+│   ├── config/
+│   │   ├── config.ts
+│   │   └── queue.ts
+│   ├── auth/
+│   │   ├── gmailAuth.ts
+│   │   └── outlookAuth.ts
+│   ├── services/
+│   │   ├── aiService.ts
+│   │   ├── gmailService.ts
+│   │   └── outlookEmailService.ts
 ├── .env
+├── .gitignore
+├── gmail-token.json
+├── mail\ bot\ setup.md
+├── package-lock.json
 ├── package.json
 ├── tsconfig.json
 └── README.md
