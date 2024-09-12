@@ -1,4 +1,4 @@
-# Pradyumna's-Reachinbox Backend Assessment
+# Pradyumna's Reachinbox Backend Assessment
 
 ## Overview
 A Node.js application for automating email management in both Gmail and Outlook, utilizing GPT-3.5 turbo-0125. It categorizes incoming emails, generates suitable replies, and applies labels or categories to the processed emails automatically.
@@ -110,5 +110,3 @@ pradyumna/
 - `/auth/outlook`: Initiates Outlook authentication
 - `/process-email/gmail`: Processes the latest unread Gmail email
 - `/process-email/outlook`: Processes the latest unread Outlook email
-- `/verify-outlook-auth`: Verifies Outlook authentication status
-
