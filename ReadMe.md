@@ -1,16 +1,9 @@
 # Pradyumna's Reachinbox Backend assignment
 
 ## Overview
-A Node.js application for automating email management in both Gmail and Outlook, utilizing GPT-3.5 turbo-0125. It categorizes incoming emails, generates suitable replies, and applies labels or categories to the processed emails automatically.
 
-## Features
-- Compatible with both Gmail and Outlook email platforms
-- AI-powered email categorization
-- Automatically generates appropriate email replies
-- Assigns labels and organizes emails based on categories
-- Implemented a WebSocket server for real-time automation
-- OAuth2 authentication for secure access to email accounts
-- Utilized BullMQ and Redis for efficient task queuing and processing
+A Node.js application automates email management for both Gmail and Outlook, using GPT-3.5 Turbo-0125 to categorize incoming emails, generate suitable replies, and automatically apply labels or categories. It features AI-powered email categorization, OAuth2 authentication for secure access, and real-time automation via a WebSocket server. BullMQ and Redis are used for efficient task queuing and processing.
+
 
 ## Prerequisites
 - Node.js (v14 or higher)
