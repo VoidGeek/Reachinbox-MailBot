@@ -1,4 +1,3 @@
-
 ## Overview
 
 A Node.js application automates email management for both Gmail and Outlook, using GPT-3.5 Turbo-0125 to categorize incoming emails, generate suitable replies, and automatically apply labels or categories. It features AI-powered email categorization, OAuth2 authentication for secure access, and real-time automation via a WebSocket server. BullMQ and Redis are used for efficient task queuing and processing.
