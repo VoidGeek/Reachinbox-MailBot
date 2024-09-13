@@ -38,8 +38,8 @@ A Node.js application automates email management for both Gmail and Outlook, usi
    REDIS_PASS = your_password
    ```
 
-   ### For Gmail: Set up OAuth 2.0 credentials in the Google Cloud Console
-   ### For Outlook: Register an application in the Azure Portal and configure the necessary permissions
+   For Gmail: Set up OAuth 2.0 credentials in the Google Cloud Console
+   For Outlook: Register an application in the Azure Portal and configure the necessary permissions
 
 
 ## API Endpoints
@@ -49,4 +49,5 @@ A Node.js application automates email management for both Gmail and Outlook, usi
 - `/process-email/gmail`: Processes the latest unread Gmail email
 - `/process-email/outlook`: Processes the latest unread Outlook email
 
-## All these are done automatically by web socket server.
+## Run using npm start
+All these are done automatically by web socket server.
