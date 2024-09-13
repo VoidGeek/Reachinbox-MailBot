@@ -1,4 +1,4 @@
-# Pradyumna's Reachinbox Backend Assessment
+# Pradyumna's Reachinbox Backend assignment
 
 ## Overview
 A Node.js application for automating email management in both Gmail and Outlook, utilizing GPT-3.5 turbo-0125. It categorizes incoming emails, generates suitable replies, and applies labels or categories to the processed emails automatically.
@@ -20,45 +20,8 @@ A Node.js application for automating email management in both Gmail and Outlook,
 - OpenAI API key
 - Docker
 
-## Folder Structure
-```bash
-pradyumna/
-├── src/
-│   ├── app.ts
-│   ├── config/
-│   │   ├── config.ts
-│   │   └── queue.ts
-│   ├── auth/
-│   │   ├── gmailAuth.ts
-│   │   └── outlookAuth.ts
-│   ├── services/
-│   │   ├── aiService.ts
-│   │   ├── gmailService.ts
-│   │   └── outlookEmailService.ts
-├── .env
-├── .gitignore
-├── gmail-token.json
-├── mail\ bot\ setup.md
-├── package-lock.json
-├── package.json
-├── tsconfig.json
-└── README.md
-```
+##Configuration
 
-## Setup
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/ai-email-assistant.git
-   cd ai-email-assistant
-   ```
-
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-3. Set up environment variables:
    Create a `.env` file in the root directory and add the following:
 
    ```
