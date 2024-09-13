@@ -20,7 +20,7 @@ A Node.js application for automating email management in both Gmail and Outlook,
 - OpenAI API key
 - Docker
 
-##Configuration
+## Configuration
 
    Create a `.env` file in the root directory and add the following:
 
