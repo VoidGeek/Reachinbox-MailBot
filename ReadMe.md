@@ -42,23 +42,6 @@ A Node.js application automates email management for both Gmail and Outlook, usi
    - For Gmail: Set up OAuth 2.0 credentials in the Google Cloud Console
    - For Outlook: Register an application in the Azure Portal and configure the necessary permissions
 
-## Usage
-
-1. Start the server:
-   ```
-   npm start
-   ```
-
-2. Authenticate your email accounts:
-   - Gmail: Visit `http://localhost:3000/auth/gmail` or `http://localhost:3000/auth`
-   - Outlook: Visit `http://localhost:3000/auth/outlook`
-   - It is a one time process
-
-3. Process emails:
-   - Gmail: `http://localhost:3000/process-email/gmail`
-   - Outlook: `http://localhost:3000/process-email/outlook`
-
-4. step 2 and 3 will done automatically by the web socket once the refresh token is generated.
 
 ## API Endpoints
 
@@ -66,3 +49,5 @@ A Node.js application automates email management for both Gmail and Outlook, usi
 - `/auth/outlook`: Initiates Outlook authentication
 - `/process-email/gmail`: Processes the latest unread Gmail email
 - `/process-email/outlook`: Processes the latest unread Outlook email
+
+## All these are done automatically by web socket server.
