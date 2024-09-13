@@ -1,4 +1,3 @@
-# Pradyumna's Reachinbox Backend assignment
 
 ## Overview
 
